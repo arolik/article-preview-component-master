@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css" />
-  
+
   <title>Frontend Mentor | Article preview component</title>
 
 </head>
+
 <body>
-  <p>text</p>
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="app">
+    <div class="app__content">
+      <div class="app__content__picture">
+      </div>
+      <div class="app__content__desc" id="appContentDesc">
+        <div class="card">
+          <h1 class="card__title">Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </h1>
+          <p class="card__text">
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+          <div class="card__user__wrapper">
+            <div class="user__info">
+              <img class="user__info__photo" src="./images/avatar-michelle.jpg" />
+              <div class="user__info__details">
+                <p class="user__info__name">Michelle Appleton</p>
+                <p class="user__info__birth">28 Jun 2020</p>
+              </div>
+            </div>
+            <div class="btn__share__wrapper" >
+              <button class="btn__share" id="btn__share" type="button">
+                <img class="btn__share__img" src="./images/icon-share.svg" />
+              </button>
+              <div class="desktop__tooltip" id="desktopTooltip">
+                <div class="tooltip__inner">
+                  <p>SHARE</p>
+                  <img class="social__link link__facebook" src="./images/icon-facebook.svg" />
+                  <img class="social__link link__twitter" src="./images/icon-twitter.svg" />
+                  <img class="social__link link__pinterest" src="./images/icon-pinterest.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile__tooltip" id="mobileTooltip">
+          <div class="tooltip__inner">
+            <p>SHARE</p>
+            <img class="social__link link__facebook" src="./images/icon-facebook.svg" />
+            <img class="social__link link__twitter" src="./images/icon-twitter.svg" />
+            <img class="social__link link__pinterest" src="./images/icon-pinterest.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
   <script src="script.js"></script>
-</body> 
+</body>
+
 </html>
